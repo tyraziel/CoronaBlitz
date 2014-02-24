@@ -1,0 +1,27 @@
+settings =
+{
+        orientation =
+        {
+                default = "landscapeRight",
+				content = "landscapeRight",
+				supported =
+					{
+							"landscapeRight"
+					},
+--                default = "portrait",
+--                                content = "portrait",
+--                                supported =
+--                                        {
+--                                                        "portrait"
+--                                        },
+
+        },
+ 
+        iphone =
+        {
+                plist =
+                {
+                        UIPrerenderedIcon = true
+                },
+        }
+}
