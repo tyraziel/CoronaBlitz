@@ -36,7 +36,7 @@ local mainGroup = display.newGroup()
 local gameState = {gameOver = false, paused = true, win = false, endGame = false, begin = true, cookiesMoving = false, removingCookies = false}
 local gameTimer = {lastTime = 0}
 local cookieGrid = {}
-local numberToColor = {{r=255,g=0,b=0},{r=0,g=0,b=255},{r=0,g=255,b=0},{r=126,g=0,b=255},{r=255,g=255,b=0},{r=255,g=126,b=0}}
+local numberToColor = {{r=255,g=0,b=0},{r=0,g=0,b=255},{r=0,g=255,b=0},{r=126,g=0,b=255},{r=255,g=255,b=0},{r=126,g=126,b=126}}
 local swipeTouch = {started = false, startX = 0, startY = 0, endingX = 0, endingY = 0, ended = true, activateCookieMove = false, threshold = 40, cookieX = 0, cookieY = 0, move=""}
 local startText
 local startGridX = 150
