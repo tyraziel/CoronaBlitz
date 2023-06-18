@@ -43,8 +43,9 @@ local startGridX = 150
 local startGridY = 65
 local cookieSize = 45
 local cookieSpacing = 5
-local cookieVel = 300
-local cookieRemoveTTL = 1000
+local cookieVel = 700
+local cookieRemoveTTL = 250
+local cookieRemoveTTLStatic = 250
 local updateCookieLocation
 local checkForLine
 
@@ -211,7 +212,7 @@ local gameLoop = function(event)
   	      cookieRemoveTTL = cookieRemoveTTL - millisElapsed
   	      if(cookieRemoveTTL < 0) then
   	      	gameState.removingCookies = false
-  	      	cookieRemoveTTL = 1000
+  	      	cookieRemoveTTL = cookieRemoveTTLStatic
 
             for i=1,5 do
   	          for j=1,5 do
